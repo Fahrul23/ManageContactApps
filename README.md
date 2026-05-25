@@ -1,4 +1,4 @@
-# Nexus Connect - Contact Management App
+# Contact Management App
 
 Aplikasi Contact Management (Manajemen Kontak) berbasis React, Redux Toolkit, dan Vite. Aplikasi ini telah dilengkapi dengan fitur manajemen kontak lengkap, penanda kontak favorit, serta pemfilteran dan pencarian.
 

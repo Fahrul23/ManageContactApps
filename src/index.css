@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@theme {
+  /* ─── Typography ─────────────────────────────── */
+  --font-sans: 'Hanken Grotesk', system-ui, sans-serif;
+
+  /* ─── Nexus Connect Palette (from DESIGN.md) ─── */
+
+  /* Surface */
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-surface-variant: #d3e4fe;
+
+  /* On-Surface */
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #464554;
+  --color-inverse-surface: #213145;
+  --color-inverse-on-surface: #eaf1ff;
+
+  /* Outline */
+  --color-outline: #767586;
+  --color-outline-variant: #c7c4d7;
+
+  /* Background */
+  --color-background: #f8f9ff;
+  --color-on-background: #0b1c30;
+
+  /* Primary (Indigo) */
+  --color-primary: #4648d4;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #6063ee;
+  --color-on-primary-container: #fffbff;
+  --color-inverse-primary: #c0c1ff;
+  --color-surface-tint: #494bd6;
+  --color-primary-fixed: #e1e0ff;
+  --color-primary-fixed-dim: #c0c1ff;
+  --color-on-primary-fixed: #07006c;
+  --color-on-primary-fixed-variant: #2f2ebe;
+
+  /* Secondary (Pink) */
+  --color-secondary: #b4136d;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fd56a7;
+  --color-on-secondary-container: #600037;
+  --color-secondary-fixed: #ffd9e4;
+  --color-secondary-fixed-dim: #ffb0cd;
+  --color-on-secondary-fixed: #3e0022;
+  --color-on-secondary-fixed-variant: #8c0053;
+
+  /* Tertiary (Neutral Gray) */
+  --color-tertiary: #595c5e;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #727577;
+  --color-on-tertiary-container: #fbfdff;
+  --color-tertiary-fixed: #e0e3e5;
+  --color-tertiary-fixed-dim: #c4c7c9;
+  --color-on-tertiary-fixed: #191c1e;
+  --color-on-tertiary-fixed-variant: #444749;
+
+  /* Error */
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  /* ─── Border Radius ───────────────────────────── */
+  --radius-sm: 0.25rem;
+  --radius-DEFAULT: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ─── Spacing ─────────────────────────────────── */
+  --spacing-container: 2rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-card: 1.5rem;
+  --spacing-stack-sm: 0.5rem;
+  --spacing-stack-md: 1rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: #f8f9ff;
+    color: #0b1c30;
+    font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  }
+
+  ::selection {
+    background-color: #e1e0ff;
+    color: #07006c;
+  }
+
+  /* Material Symbols */
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+    user-select: none;
+  }
+}
+
+@layer utilities {
+  /* Scrollbar */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Typography Scale (DESIGN.md) */
+  .text-display-lg {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+
+  .text-headline-md {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  .text-body-base {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .text-body-sm {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .text-label-caps {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  /* Card Elevation */
+  .card-shadow {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  }
+
+  .card-shadow-hover {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+}

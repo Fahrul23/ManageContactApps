@@ -2,6 +2,10 @@
 
 Aplikasi Contact Management (Manajemen Kontak) berbasis React, Redux Toolkit, dan Vite. Aplikasi ini telah dilengkapi dengan fitur manajemen kontak lengkap, penanda kontak favorit, serta pemfilteran dan pencarian.
 
+## Live Demo
+Aplikasi ini sudah di-deploy dan dapat diakses secara langsung di:
+👉 **[manage-contact-apps.netlify.app](https://manage-contact-apps.netlify.app/)**
+
 ## Prasyarat
 Pastikan Anda sudah menginstal [Node.js](https://nodejs.org/) di perangkat Anda.
 
